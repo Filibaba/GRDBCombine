@@ -11,7 +11,7 @@ let package = Package(
         .watchOS("6.0"),
     ],
     products: [
-        .library(name: "GRDBCombine", targets: ["GRDBCombine"]),
+        .library(name: "GRDBCombine", type: .dynamic, targets: ["GRDBCombine"]),
     ],
     dependencies: [
         .package(url: "https://github.com/filibaba/GRDB.swift.git", .upToNextMajor(from: "4.1.0"))
